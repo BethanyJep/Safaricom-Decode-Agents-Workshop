@@ -33,7 +33,7 @@ export GITHUB_TOKEN="add-your-token-here"
 
 > **Tip:** You can also create a `webapp/.env` file with `GITHUB_TOKEN=your-token` — the app loads `.env` files automatically.
 
-## 4) Start the web app
+## 3) Start the web app
 
 ```bash
 python webapp/app.py
@@ -48,7 +48,7 @@ You should see:
    Open http://127.0.0.1:5000 in your browser
 ```
 
-## 5) Chat with Biashara Bot
+## 4) Chat with Biashara Bot
 
 Open [http://127.0.0.1:5000](http://127.0.0.1:5000) in your browser. Try these questions:
 
@@ -64,7 +64,7 @@ Niko Kilimani. Mnatuma huku na ni free delivery?
 We have a meeting tomorrow with 20 people — can you handle that on short notice?
 ```
 
-## 6) How it works
+## 5) How it works
 
 | Component | Description |
 |-----------|-------------|
@@ -75,7 +75,7 @@ We have a meeting tomorrow with 20 people — can you handle that on short notic
 
 The app mirrors the two MCP tools (`search_business_faqs`, `get_product_catalogue`) as OpenAI function-calling tools. When the model decides it needs data, Flask executes the tool locally and feeds the result back — up to 5 rounds per message.
 
-## 7) Configuration
+## 6) Configuration
 
 You can customise the app with environment variables:
 
